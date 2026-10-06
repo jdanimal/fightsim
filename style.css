@@ -1,0 +1,13 @@
+:root { --bg: #0f6fa6; --card: #ffffff; --ink: #14202b; --muted: #55606b; }
+* { box-sizing: border-box; }
+body { margin: 0; background: linear-gradient(#1592d3, var(--bg)); color: var(--ink); font: 16px/1.6 "Segoe UI", system-ui, sans-serif; min-height: 100vh; }
+main { max-width: 760px; margin: 0 auto; padding: 32px 16px 48px; }
+header { display: flex; align-items: center; gap: 16px; color: #fff; margin-bottom: 20px; }
+header img { width: 72px; height: 72px; border-radius: 50%; border: 3px solid #000; }
+header h1 { margin: 0; font-size: 28px; font-weight: 900; text-shadow: 0 2px 0 #000; }
+.card { background: var(--card); border-radius: 12px; padding: 24px; box-shadow: 0 6px 0 #0005; }
+.card h2 { margin-top: 1.4em; font-size: 19px; } .card h2:first-child { margin-top: 0; }
+nav { margin-top: 20px; display: flex; gap: 16px; flex-wrap: wrap; }
+nav a { color: #fff; font-weight: 700; }
+small { color: var(--muted); }
+a { color: #0b5d8c; }
