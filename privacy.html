@@ -11,29 +11,38 @@
 <main>
 <header><img src="icon.png" alt="Fightsim icon"><h1>Privacy Policy</h1></header>
 <div class="card">
-<p><small>Last updated: October 6, 2026</small></p>
+<p><small>Last updated: October 8, 2026</small></p>
 <h2>Overview</h2>
 <p>This policy covers the Fightsim uploader, a desktop tool that the Fightsim channel owner runs on their own computer to
-upload their own videos to YouTube. The tool uses <strong>YouTube API Services</strong>. By using it you also agree to the
+upload their own videos to YouTube and manage comments on them. The tool uses <strong>YouTube API Services</strong>. By using it you also agree to the
 <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>, and Google's handling of your data is described in the
 <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 <h2>What data the tool accesses</h2>
 <ul>
 <li>The OAuth permission <code>youtube.upload</code>, which lets it upload videos to the YouTube channel you choose when signing in.</li>
+<li>The OAuth permission <code>youtube.force-ssl</code>, which it uses only to: read the channel's own list of uploaded videos and
+their public/private status; read the public comments on the channel's own public videos (comment text, like count and date);
+and, when the channel owner runs the comments command, post one comment as the channel on each of its own videos
+("Comment if you would like to see a new fight or a new character!").</li>
 <li>The video files and their titles and descriptions, which the tool creates locally on your computer.</li>
 </ul>
-<p>The tool does not read your existing videos, comments, subscribers, analytics, contacts, or any other account information.</p>
+<p>The tool does not read subscribers, analytics, contacts, or any other account information, does not access other channels'
+videos, and never edits or deletes videos or comments.</p>
 <h2>How the data is used and stored</h2>
 <ul>
 <li>The sign-in token is stored only on your own computer (in the tool's <code>secrets</code> folder) and is used only to upload your videos.</li>
 <li>A local log records which video files were uploaded and their YouTube video IDs, so nothing is uploaded twice.</li>
+<li>To choose which fights and characters to make next, the tool saves the 10 most-liked viewer comments (text, like count, date and
+video link) in a local file. Commenters' names or channel IDs are not stored. Saved comments are refreshed on every run and
+deleted after at most 30 days.</li>
 <li>No data is sent to any server other than Google's YouTube API, and no data is sold, shared with third parties, or used for advertising.</li>
 <li>The tool uses no cookies, analytics, or tracking.</li>
 </ul>
 <h2>Removing access and deleting data</h2>
 <p>You can revoke the tool's access at any time from your Google Account's
 <a href="https://security.google.com/settings/security/permissions">third-party access page</a>. Deleting the tool's
-<code>secrets</code> folder removes the stored token from your computer. Uploaded videos can be deleted in YouTube Studio.</p>
+<code>secrets</code> folder removes the stored token from your computer, and deleting its <code>comments</code> folder removes
+saved comments. Requests to delete data can be sent to the contact below and are handled within 7 days. Uploaded videos can be deleted in YouTube Studio.</p>
 <h2>Contact</h2>
 <p>Questions about this policy: <a href="mailto:jorgedavilaanimal@gmail.com">jorgedavilaanimal@gmail.com</a></p>
 </div>
